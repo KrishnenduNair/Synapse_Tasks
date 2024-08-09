@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishnendu's Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+    <div class="main">
+        <div class = "header">
+            <nav>
+                <ul>
+                    <li class="active"><a href="./Home.html">Home</a></li>
+                    <li><a href="./AboutMe.html">About Me</a></li>
+                    <li><a href="./Projects.html">Projects</a></li>
+                    <li><a href="./ContactMe.html">Contact Me</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-icon">
+                <img src="./assets/menu.png" alt="Mobile menu icon">
+            </div>
+        </div>
+        <div class="title">
+			<h1><u>Krishnendu Nair</u></h1>
+		</div>
+        <div class="comb">
+        <div class="image">
+            <img src="./assets/nandu.jpeg" alt="Me :)">
+        </div>
+        <div class="content">
+            <h2><u>About Me in short :-) </u></h2>
+            <br>
+            <p class = "text">
+                Hi there! My name is Krishnendu Nair and I am currently a 2nd year student at Dwarkadas J. Sanghvi College of Engineering under the Computer Engineering Department.
+                <br>
+                <br>
+                One thing that have a knack for is learning and gaining experience whether be a new sport, subject or art form, you can be sure that i will explore it.
+                <br><br>
+                 <span class="emph"><u><a href="./AboutMe.html">Want to know more about me? Head to the About Me page! or click here : D</a></u></span>
+            </p>
+        </div>
+    </div>
+    </div>
+    <script>
+        const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+        const header = document.querySelector('.header');
+        const nav = document.querySelector('nav');
+
+        mobileMenuIcon.addEventListener('click', () => {
+            header.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
